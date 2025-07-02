@@ -53,7 +53,7 @@ $reviews = $stmtReviews->fetchAll(PDO::FETCH_ASSOC);
 
 <main class="container">
     <section class="artist-profile">
-        <img src="<?= htmlspecialchars($umjetnica['slika_url']) ?>" alt="<?= htmlspecialchars($umjetnica['ime']) ?>" class="profile-image">
+        <img src="<?= htmlspecialchars($artist['slika_url']) ?>" alt="<?= htmlspecialchars($artist['ime']) ?>" class="profile-image">
         <h1><?= htmlspecialchars($artist['ime']) ?></h1>
         <p><?= nl2br(htmlspecialchars($artist['biografija'])) ?></p>
     </section>
