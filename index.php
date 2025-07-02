@@ -10,7 +10,7 @@ $umjetnice = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indie Diva Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -22,8 +22,8 @@ $umjetnice = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php endif; ?>
         <a href="prijedlozi.php" class="btn">Predloži umjetnicu</a>
         <?php if (isset($_SESSION['user'])): ?>
-            <p>Dobrodošli, <?= htmlspecialchars($_SESSION['user']['korisnicko_ime']) ?> |
-                <a href="logout.php" class="btn">Odjava</a></p>
+            <span>Dobrodošli, <strong><?= htmlspecialchars($_SESSION['user']['korisnicko_ime']) ?></strong></span>
+            <a href="logout.php" class="btn">Odjava</a>
         <?php else: ?>
             <a href="login.php" class="btn">Prijavi se</a>
         <?php endif; ?>
@@ -32,12 +32,11 @@ $umjetnice = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <main class="container">
     <h2>Umjetnice</h2>
-    <section class="artist-container">
+    <section class="artist-grid">
         <?php foreach ($umjetnice as $artist): ?>
             <article class="artist-card">
-                <div class="image-container">
-                    <img src="<?= htmlspecialchars($artist['slika_url']) ?>"
-                         alt="<?= htmlspecialchars($artist['ime']) ?>">
+                <div class="image-wrapper">
+                    <img src="<?= htmlspecialchars($artist['slika_url']) ?>" alt="<?= htmlspecialchars($artist['ime']) ?>">
                 </div>
                 <h3><?= htmlspecialchars($artist['ime']) ?></h3>
                 <p><?= substr(htmlspecialchars($artist['biografija']), 0, 100) ?>...</p>
@@ -55,13 +54,13 @@ $umjetnice = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <a href="https://twitter.com" target="_blank">Twitter</a>
         </div>
         <div class="newsletter">
-            <h3>Prijavite se na naš newsletter</h3>
+            <h3>Prijavite se na newsletter</h3>
             <form id="newsletter-form" action="newsletter_signup.php" method="post">
                 <input type="email" name="email" placeholder="Unesite vaš email" required>
-                <button type="submit" class="btn">Prijavite se</button>
+                <button type="submit" class="btn">Prijava</button>
             </form>
             <div id="success-message" class="success-message" style="display: none;">
-                Prijavljeni ste na newsletter!
+                Uspješno ste prijavljeni!
             </div>
         </div>
     </div>
@@ -75,7 +74,7 @@ $umjetnice = $stmt->fetchAll(PDO::FETCH_ASSOC);
     const message = document.getElementById('success-message');
 
     form.addEventListener('submit', function (e) {
-        e.preventDefault(); // ukloni ako želiš pravi submit
+        e.preventDefault();
         message.style.display = 'block';
         setTimeout(() => message.style.display = 'none', 4000);
     });
