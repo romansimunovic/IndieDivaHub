@@ -1,3 +1,5 @@
+---
+
 ````markdown
 # 🎤 Indie Diva Hub
 
@@ -109,6 +111,3 @@ Projekt je izrađen pomoću umjetne inteligencije (ChatGPT), korišten je radi k
 ```
 
 ---
-
-Ako želiš, mogu ti odmah generirati i **README sa screenshotovima**, **badgevima** (npr. PHP version, license MIT, MySQL powered), i napraviti mini verziju za hrvatski. Samo reci 🩷
-```
