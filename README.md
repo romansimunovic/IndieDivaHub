@@ -1,5 +1,3 @@
-Naravno! Evo formatiranog `README.md` u potpunosti, spremnog za direktni copy-paste na tvoj GitHub projekt **Indie Diva Hub**:
-
 ---
 
 ````markdown
@@ -104,11 +102,7 @@ Responsive dizajn: prikladno za mobilne uređaje (iOS, Android), tablete i deskt
 ---
 
 ## 🙌 Credits
-
-* Autor: [Roman Šimunović](https://github.com/romanuspopulsque)
-* Dizajn: ružičasto-alternativna ljubav prema ženskoj glazbi 💜
-* Umjetnice: Caroline Polachek, Lorde, Lana Del Rey, Björk, Florence, Grimes, Clairo, Billie Eilish, FKA twigs, St. Vincent...
-
+Projekt je izrađen pomoću umjetne inteligencije (ChatGPT), korišten je radi koordinacije koda i prijedloga izmjena.
 ---
 
 > Ako ti se sviđa projekt – ostavi ⭐, forkaj ga ili proširi s još diva!
