@@ -1,6 +1,3 @@
-/* ==================================
-   📦 FONT & RESET
-================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 * {
@@ -11,113 +8,131 @@
 }
 
 body {
-  background-color: #ffeef8;
+  background-color: #fff0f5;
   color: #333;
   padding: 20px;
 }
 
-/* ==================================
-   🎀 HEADER
-================================== */
+/* Header */
 header {
-  background: linear-gradient(90deg, #f8a1d1, #f9c5d1);
+  background: linear-gradient(90deg, #f7a9d4, #ffc3e1);
   color: white;
-  padding: 25px 0;
+  padding: 30px 0;
   text-align: center;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 header h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-/* ==================================
-   🔗 NAVIGACIJA
-================================== */
+/* Navigacija */
 nav {
-  margin: 20px 0;
-  text-align: center;
+  margin-top: 20px;
 }
-
 nav a {
   text-decoration: none;
-  color: #d64191;
+  color: #b60078;
   margin: 0 15px;
   font-weight: 500;
-  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 nav a:hover {
-  text-decoration: underline;
-  color: #b0308b;
+  background-color: #ffe0f0;
+  color: #82004e;
 }
 
-/* ==================================
-   🧱 GLAVNI SADRŽAJ
-================================== */
+/* Glavni sadržaj */
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   background-color: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* ==================================
-   👩 UMJETNICE
-================================== */
-.umjetnica {
-  margin-bottom: 30px;
+.container h2 {
   text-align: center;
+  color: #d64191;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-.umjetnica img {
-  max-width: 100%;
-  max-height: 350px;
-  height: auto;
+/* Grid za umjetnice */
+.artist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.artist-card {
+  background-color: #ffeef8;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.artist-card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
 
-.umjetnica img:hover {
+.artist-card img:hover {
   transform: scale(1.02);
 }
 
-.umjetnica h2 {
-  margin-top: 10px;
-  font-size: 1.4rem;
+.artist-card h3 {
   color: #d64191;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-.umjetnica p {
+.artist-card p {
   font-size: 0.95rem;
-  margin: 10px auto;
-  max-width: 700px;
+  color: #555;
+  margin-bottom: 15px;
 }
 
-.umjetnica a {
-  color: #6a0dad;
-  font-weight: 500;
+/* Button stil */
+.btn {
+  background-color: #d64191;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #b0308b;
 }
 
-.umjetnica a:hover {
-  color: #4b0075;
-  text-decoration: underline;
-}
-
-/* ==================================
-   📩 FORME
-================================== */
+/* Forme */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 20px;
 }
 
 input[type="text"],
@@ -127,7 +142,7 @@ textarea,
 select {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 input[type="submit"],
@@ -136,61 +151,66 @@ button {
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease;
 }
-
 input[type="submit"]:hover,
 button:hover {
   background-color: #b0308b;
 }
 
-/* ==================================
-   📊 TABELA
-================================== */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
-}
-
-th {
-  background-color: #f9d7eb;
-}
-
-/* ==================================
-   👠 FOOTER
-================================== */
+/* Footer */
 footer {
+  margin-top: 50px;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-  color: #777;
   font-size: 0.9rem;
+  color: #777;
 }
 
-/* ==================================
-   📱 RESPONSIVNOST
-================================== */
+footer a {
+  color: #b60078;
+  margin: 0 10px;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter */
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 70%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.success-message {
+  background-color: #e4fbe4;
+  padding: 10px;
+  color: #339933;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .container {
-    padding: 15px;
+  header h1 {
+    font-size: 1.8rem;
   }
 
-  .umjetnica img {
-    max-height: 250px;
+  .artist-container {
+    grid-template-columns: 1fr;
   }
 
   nav a {
-    display: block;
-    margin: 10px 0;
+    display: inline-block;
+    margin: 8px;
+  }
+
+  .container {
+    padding: 20px;
   }
 }
