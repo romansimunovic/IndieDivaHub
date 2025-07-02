@@ -1,4 +1,6 @@
-/* Import Google Fonts */
+/* ==================================
+   📦 FONT & RESET
+================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 * {
@@ -14,7 +16,9 @@ body {
   padding: 20px;
 }
 
-/* Header */
+/* ==================================
+   🎀 HEADER
+================================== */
 header {
   background: linear-gradient(90deg, #f8a1d1, #f9c5d1);
   color: white;
@@ -29,11 +33,14 @@ header h1 {
   font-size: 2.2rem;
 }
 
-/* Navigacija */
+/* ==================================
+   🔗 NAVIGACIJA
+================================== */
 nav {
   margin: 20px 0;
   text-align: center;
 }
+
 nav a {
   text-decoration: none;
   color: #d64191;
@@ -41,12 +48,15 @@ nav a {
   font-weight: 500;
   transition: all 0.3s ease;
 }
+
 nav a:hover {
   text-decoration: underline;
   color: #b0308b;
 }
 
-/* Glavni sadržaj */
+/* ==================================
+   🧱 GLAVNI SADRŽAJ
+================================== */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -56,7 +66,9 @@ nav a:hover {
   box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Umjetnice prikaz */
+/* ==================================
+   👩 UMJETNICE
+================================== */
 .umjetnica {
   margin-bottom: 30px;
   text-align: center;
@@ -64,12 +76,13 @@ nav a:hover {
 
 .umjetnica img {
   max-width: 100%;
-  height: auto;
   max-height: 350px;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
 }
+
 .umjetnica img:hover {
   transform: scale(1.02);
 }
@@ -92,12 +105,15 @@ nav a:hover {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+
 .umjetnica a:hover {
   color: #4b0075;
   text-decoration: underline;
 }
 
-/* Forme */
+/* ==================================
+   📩 FORME
+================================== */
 form {
   display: flex;
   flex-direction: column;
@@ -125,27 +141,34 @@ button {
   font-weight: bold;
   transition: background 0.3s ease;
 }
+
 input[type="submit"]:hover,
 button:hover {
   background-color: #b0308b;
 }
 
-/* Tabela */
+/* ==================================
+   📊 TABELA
+================================== */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
+
 th, td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: left;
 }
+
 th {
   background-color: #f9d7eb;
 }
 
-/* Footer */
+/* ==================================
+   👠 FOOTER
+================================== */
 footer {
   text-align: center;
   padding: 15px;
@@ -154,7 +177,9 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsivnost */
+/* ==================================
+   📱 RESPONSIVNOST
+================================== */
 @media (max-width: 768px) {
   .container {
     padding: 15px;
