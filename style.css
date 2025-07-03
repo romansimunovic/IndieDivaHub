@@ -1,67 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 body {
-  background-color: #fff0f5;
-  color: #333;
+  background-color: #fdf6f0;
+  color: #2e2e2e;
   padding: 20px;
 }
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #f7a9d4, #ffc3e1);
-  color: white;
-  padding: 30px 0;
+  background: linear-gradient(90deg, #eec9d2, #fceae8);
+  color: #3e1d29;
+  padding: 35px 0;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 20px;
   margin-bottom: 40px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border: 1px solid #ecd8d1;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 /* Navigacija */
 nav {
-  margin-top: 20px;
+  margin-top: 15px;
+  text-align: center;
 }
 nav a {
   text-decoration: none;
-  color: #b60078;
-  margin: 0 15px;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #842f5f;
+  margin: 0 10px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 nav a:hover {
-  background-color: #ffe0f0;
-  color: #82004e;
+  background-color: #fce5ed;
+  color: #4a1935;
 }
 
 /* Glavni sadržaj */
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background-color: #fffaf7;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+  border: 1px solid #f1dfda;
 }
 
 .container h2 {
   text-align: center;
-  color: #d64191;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  color: #a6456c;
+  font-size: 2rem;
+  margin-bottom: 25px;
 }
 
 /* Grid za umjetnice */
@@ -73,68 +78,69 @@ nav a:hover {
 }
 
 .artist-card {
-  background-color: #ffeef8;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  padding: 20px;
+  background-color: #fcf0f4;
+  border-radius: 14px;
+  padding: 22px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  border: 1px solid #f1d5e2;
+  transition: all 0.3s ease;
 }
 
 .artist-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
 }
 
 .artist-card img {
   width: 100%;
-  height: 220px;
-  object-fit: contain;
-  background-color: #fff0f8;
+  height: 230px;
+  object-fit: cover;
+  background-color: #fdf1f5;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #f1dfda;
   transition: transform 0.3s ease;
 }
 
 .artist-card img:hover {
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
 
 .artist-card h3 {
-  color: #d64191;
-  font-size: 1.2rem;
+  color: #a6456c;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
 .artist-card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #555;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 /* Button stil */
 .btn {
-  background-color: #d64191;
+  background-color: #a6456c;
   color: white;
-  padding: 8px 14px;
+  padding: 10px 16px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
+  font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: #b0308b;
+  background-color: #823454;
 }
 
 /* Forme */
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
+  gap: 14px;
+  margin-top: 25px;
 }
 
 input[type="text"],
@@ -142,25 +148,26 @@ input[type="email"],
 input[type="password"],
 textarea,
 select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #d9b6c7;
+  border-radius: 10px;
+  background-color: #fff9f9;
 }
 
 input[type="submit"],
 button {
-  background-color: #d64191;
+  background-color: #a6456c;
   color: white;
   padding: 10px;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
   transition: background 0.3s ease;
 }
 input[type="submit"]:hover,
 button:hover {
-  background-color: #b0308b;
+  background-color: #822f4c;
 }
 
 /* Footer */
@@ -168,11 +175,12 @@ footer {
   margin-top: 50px;
   text-align: center;
   font-size: 0.9rem;
-  color: #777;
+  color: #776d6d;
+  font-family: 'Poppins', sans-serif;
 }
 
 footer a {
-  color: #b60078;
+  color: #a6456c;
   margin: 0 10px;
   text-decoration: none;
 }
@@ -187,12 +195,13 @@ footer a:hover {
   max-width: 300px;
   margin-bottom: 10px;
   border-radius: 6px;
+  border: 1px solid #d9b6c7;
 }
 
 .success-message {
-  background-color: #e4fbe4;
+  background-color: #edf9ed;
   padding: 10px;
-  color: #339933;
+  color: #367c36;
   border-radius: 6px;
   margin-top: 10px;
 }
@@ -204,16 +213,16 @@ footer a:hover {
   margin: 0 auto 20px auto;
   object-fit: contain;
   border-radius: 12px;
-  background-color: #ffeef8;
-  padding: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background-color: #fce6f1;
+  padding: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
 
 /* Responsive */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .artist-container {
@@ -222,10 +231,10 @@ footer a:hover {
 
   nav a {
     display: inline-block;
-    margin: 8px;
+    margin: 6px;
   }
 
   .container {
-    padding: 20px;
+    padding: 22px;
   }
 }
