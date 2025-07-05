@@ -93,5 +93,3 @@ Projekt izrađen pomoću ChatGPT-a – kao podrška kodiranju, idejama i bržoj 
 > Sviđa ti se? Ostavi ⭐, forkaj ili dodaj još diva! Indie + kod = 🫶
 
 ```
-
-```
