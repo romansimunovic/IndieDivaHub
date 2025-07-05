@@ -1,111 +1,97 @@
+Naravno! Evo skraćene, čišće i još atraktivnije verzije tvog README-ja — zadržao sam sve bitne informacije, ali skratio tekst, izbacio višak i dotjerao markdown da izgleda 🔥:
+
 ````markdown
 # 🎤 Indie Diva Hub
 
-**Indie Diva Hub** je web aplikacija posvećena moćnim ženskim glasovima alternativne i indie glazbe. Omogućuje korisnicima pregled profila umjetnica, njihovih albuma, kao i ostavljanje recenzija. Također, svatko može predložiti novu izvođačicu za uvrštavanje u bazu. 🌸✨
+**Indie Diva Hub** je web aplikacija posvećena moćnim ženskim glasovima iz alternativne i indie scene. Omogućuje pregled profila umjetnica, albuma, recenzije i prijedloge novih izvođačica. 🌸✨
 
 ![Screenshot](https://upload.wikimedia.org/wikipedia/en/f/f1/Caroline_Polachek_-_Pang.png)
 
-## 💡 Funkcionalnosti
+---
 
-- ✅ Registracija i prijava korisnika
-- 👑 Admin panel za upravljanje prijedlozima
+## 💡 Glavne funkcionalnosti
+
+- 👤 Registracija i prijava
+- 👑 Admin panel za prijedloge
 - 🎶 Pregled umjetnica i albuma
-- 📝 Recenzije albuma i izvođačica
+- 📝 Recenzije
 - 📩 Predlaganje novih izvođačica
 - 📬 Newsletter forma (frontend-only)
-- 🎨 Girly pink dizajn s responsive layoutom
+- 🎨 Responsive girly dizajn
 
 ---
 
 ## 🛠 Tehnologije
 
-- **Frontend**: HTML5, CSS3 (custom + Google Fonts), JavaScript
+- **Frontend**: HTML5, CSS3 (custom + Google Fonts), JS
 - **Backend**: PHP 8+, MySQL/MariaDB (PDO)
-- **Okruženje za razvoj**: [XAMPP](https://www.apachefriends.org/) (Apache + phpMyAdmin)
-- **Deploy-friendly**: Render, Vercel (frontend), PlanetScale (MySQL)
+- **Dev okruženje**: [XAMPP](https://www.apachefriends.org/)
+- **Deploy**: Render, Vercel, PlanetScale
 
 ---
 
-## 🧪 Instalacija (lokalno)
-
-1. Kloniraj repozitorij:
+## 🚀 Lokalna instalacija
 
 ```bash
 git clone https://github.com/romanuspopulsque/IndieDivaHub.git
 ````
 
-2. Pokreni lokalni server putem [XAMPP](https://www.apachefriends.org/).
-
-3. Kreiraj bazu u **phpMyAdmin** pod nazivom: `indie_diva_hub`
-
-4. Uvezi SQL strukturu iz:
-
-   * [`indie_diva_hub.sql`](indie_diva_hub.sql)
-
-5. Uredi `db.php` ako koristiš druge podatke:
+1. Pokreni Apache/MySQL u XAMPP-u
+2. Kreiraj bazu `indie_diva_hub` u phpMyAdmin
+3. Uvezi `indie_diva_hub.sql`
+4. U `db.php` provjeri podatke za konekciju:
 
 ```php
 $pdo = new PDO("mysql:host=localhost;dbname=indie_diva_hub;charset=utf8mb4", "root", "");
 ```
 
-6. Pokreni aplikaciju putem:
-
-   ```
-   http://localhost/IndieDivaHub/
-   ```
+5. Otvori u pregledniku:
+   `http://localhost/IndieDivaHub/`
 
 ---
 
-## 👤 Admin Pristup (testni korisnik)
+## 🔐 Admin login (testni user)
 
-| Korisničko ime | Lozinka |
-| -------------- | ------- |
-| `admin`        | `admin` |
+| Username | Lozinka |
+| -------- | ------- |
+| `admin`  | `admin` |
 
-(lozinka je hashirana u bazi; koristi se MD5 u ovoj demo verziji)
+> (Lozinka hashirana s MD5 – demo verzija)
 
 ---
 
-## 📁 Struktura projekta
+## 📁 Struktura
 
 ```
 IndieDivaHub/
-│
-├── index.php                  # Početna stranica s popisom umjetnica
-├── umjetnica.php              # Profil izvođačice
-├── dodaj_recenziju.php        # Unos recenzije
-├── prijedlozi.php             # Predlaganje izvođačica
-├── admin.php                  # Admin panel za odobravanje prijedloga
-│
+├── index.php              # Početna
+├── umjetnica.php          # Profil izvođačice
+├── dodaj_recenziju.php    # Recenzije
+├── prijedlozi.php         # Novi prijedlozi
+├── admin.php              # Admin panel
 ├── register.php / login.php / logout.php
-├── db.php                     # Konekcija na bazu podataka
-├── style.css                  # Glavni stilovi (girly indie vibes 💅)
-├── indie_diva_hub.sql         # SQL struktura i sample podaci
+├── db.php                 # Baza
+├── style.css              # Stilovi 💅
+├── indie_diva_hub.sql     # SQL baza
 └── README.md
 ```
 
 ---
 
-## 🎨 UI Stil
+## 🎨 Stil
 
-Korištene boje:
-
-* Pozadina: `#ffeef8`
-* Akcent: `#d64191` (indie pink)
-* Gradijent header: `#f8a1d1 → #f9c5d1`
-* Font: [Poppins](https://fonts.google.com/specimen/Poppins)
-
-Responsive dizajn: prikladno za mobilne uređaje (iOS, Android), tablete i desktop.
+* **Boje**: `#ffeef8`, `#d64191`, `#f8a1d1 → #f9c5d1`
+* **Font**: [Poppins](https://fonts.google.com/specimen/Poppins)
+* **Dizajn**: Mobilno-friendly, soft girl indie vibes
 
 ---
 
 ## 🙌 Credits
-Projekt je izrađen pomoću umjetne inteligencije (ChatGPT), korišten je radi koordinacije koda i prijedloga izmjena.
----
 
-> Ako ti se sviđa projekt – ostavi ⭐, forkaj ga ili proširi s još diva!
-> Indie glazba + kod = 🫶
+Projekt izrađen pomoću ChatGPT-a – kao podrška kodiranju, idejama i bržoj izradi.
+
+> Sviđa ti se? Ostavi ⭐, forkaj ili dodaj još diva! Indie + kod = 🫶
 
 ```
 
----
+```
