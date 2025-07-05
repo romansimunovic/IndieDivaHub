@@ -3,7 +3,7 @@ Naravno! Evo skraćene, čišće i još atraktivnije verzije tvog README-ja — 
 ````markdown
 # 🎤 Indie Diva Hub
 
-**Indie Diva Hub** je web aplikacija posvećena moćnim ženskim glasovima iz alternativne i indie scene. Omogućuje pregled profila umjetnica, albuma, recenzije i prijedloge novih izvođačica. 🌸✨
+Indie Diva Hub je web aplikacija posvećena moćnim ženskim glasovima iz alternativne i indie scene. Omogućuje pregled profila umjetnica, albuma, recenzije i prijedloge novih izvođačica. 🌸✨
 
 ![Screenshot](https://upload.wikimedia.org/wikipedia/en/f/f1/Caroline_Polachek_-_Pang.png)
 
