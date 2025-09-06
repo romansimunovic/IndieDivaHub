@@ -35,17 +35,5 @@ admin	admin
 
 Lozinka je hashirana pomoću MD5 (demo verzija).
 
-Struktura projekta
-IndieDivaHub/
-├── index.php              # Početna
-├── umjetnica.php          # Profil izvođačice
-├── dodaj_recenziju.php    # Recenzije
-├── prijedlozi.php         # Novi prijedlozi
-├── admin.php              # Admin panel
-├── register.php / login.php / logout.php
-├── db.php                 # Baza
-├── style.css              # Stilovi
-├── indie_diva_hub.sql     # SQL baza
-└── README.md
 
 _Projekt je izrađen kao studentski rad za kolegij Programiranje 1 (mentor: prof. dr. sc. Boris Badurina), uz korištenje ChatGPT-a za podršku u pisanju koda i dokumentacije._
