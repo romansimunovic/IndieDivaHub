@@ -1,68 +1,57 @@
-Naravno! Evo skraćene, čišće i još atraktivnije verzije tvog README-ja — zadržao sam sve bitne informacije, ali skratio tekst, izbacio višak i dotjerao markdown da izgleda 🔥:
+**Indie Diva Hub**
 
-````markdown
-# 🎤 Indie Diva Hub
+Indie Diva Hub je web aplikacija posvećena izvođačicama iz alternativne i indie glazbene scene. Omogućuje pregled profila umjetnica i albuma, pisanje recenzija te predlaganje novih izvođačica.
 
-Indie Diva Hub je web aplikacija posvećena moćnim ženskim glasovima iz alternativne i indie scene. Omogućuje pregled profila umjetnica, albuma, recenzije i prijedloge novih izvođačica. 🌸✨
+Funkcionalnosti
 
-![Screenshot](https://upload.wikimedia.org/wikipedia/en/f/f1/Caroline_Polachek_-_Pang.png)
+Registracija i prijava korisnika
 
----
+Admin panel za pregled prijedloga
 
-## 💡 Glavne funkcionalnosti
+Pregled profila umjetnica i albuma
 
-- 👤 Registracija i prijava
-- 👑 Admin panel za prijedloge
-- 🎶 Pregled umjetnica i albuma
-- 📝 Recenzije
-- 📩 Predlaganje novih izvođačica
-- 📬 Newsletter forma (frontend-only)
-- 🎨 Responsive girly dizajn
+Dodavanje recenzija
 
----
+Predlaganje novih izvođačica
 
-## 🛠 Tehnologije
+Newsletter forma (frontend-only)
 
-- **Frontend**: HTML5, CSS3 (custom + Google Fonts), JS
-- **Backend**: PHP 8+, MySQL/MariaDB (PDO)
-- **Dev okruženje**: [XAMPP](https://www.apachefriends.org/)
-- **Deploy**: Render, Vercel, PlanetScale
+Responzivan dizajn
 
----
+Tehnologije
 
-## 🚀 Lokalna instalacija
+Frontend: HTML5, CSS3, JavaScript
 
-```bash
+Backend: PHP 8+, MySQL/MariaDB (PDO)
+
+Dev okruženje: XAMPP
+
+Deploy: Render, Vercel, PlanetScale
+
+Pokretanje lokalno
 git clone https://github.com/romanuspopulsque/IndieDivaHub.git
-````
 
-1. Pokreni Apache/MySQL u XAMPP-u
-2. Kreiraj bazu `indie_diva_hub` u phpMyAdmin
-3. Uvezi `indie_diva_hub.sql`
-4. U `db.php` provjeri podatke za konekciju:
 
-```php
+Pokreni Apache i MySQL u XAMPP-u
+
+U phpMyAdmin kreiraj bazu indie_diva_hub
+
+Uvezi datoteku indie_diva_hub.sql
+
+U db.php provjeri podatke za konekciju:
+
 $pdo = new PDO("mysql:host=localhost;dbname=indie_diva_hub;charset=utf8mb4", "root", "");
-```
 
-5. Otvori u pregledniku:
-   `http://localhost/IndieDivaHub/`
 
----
+Otvori aplikaciju na http://localhost/IndieDivaHub/
 
-## 🔐 Admin login (testni user)
+Admin login (testni korisnik)
+Username	Lozinka
+admin	admin
 
-| Username | Lozinka |
-| -------- | ------- |
-| `admin`  | `admin` |
+Lozinka je hashirana pomoću MD5 (demo verzija).
 
-> (Lozinka hashirana s MD5 – demo verzija)
-
----
-
-## 📁 Struktura
-
-```
+Struktura projekta
 IndieDivaHub/
 ├── index.php              # Početna
 ├── umjetnica.php          # Profil izvođačice
@@ -71,25 +60,10 @@ IndieDivaHub/
 ├── admin.php              # Admin panel
 ├── register.php / login.php / logout.php
 ├── db.php                 # Baza
-├── style.css              # Stilovi 💅
+├── style.css              # Stilovi
 ├── indie_diva_hub.sql     # SQL baza
 └── README.md
-```
 
----
+Napomena
 
-## 🎨 Stil
-
-* **Boje**: `#ffeef8`, `#d64191`, `#f8a1d1 → #f9c5d1`
-* **Font**: [Poppins](https://fonts.google.com/specimen/Poppins)
-* **Dizajn**: Mobilno-friendly, soft girl indie vibes
-
----
-
-## 🙌 Credits
-
-Projekt izrađen pomoću ChatGPT-a – kao podrška kodiranju, idejama i bržoj izradi.
-
-> Sviđa ti se? Ostavi ⭐, forkaj ili dodaj još diva! Indie + kod = 🫶
-
-```
+_Projekt je izrađen kao studentski rad za kolegij Programiranje 1 (mentor: prof. dr. sc. Boris Badurina), uz korištenje ChatGPT-a za podršku u pisanju koda i dokumentacije._
